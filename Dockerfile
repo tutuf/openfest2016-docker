@@ -16,3 +16,5 @@ RUN bundle install
 RUN rails new . --force
 RUN echo "Rails.application.routes.draw { root('welcome#index') }" > ${APP_PATH}/config/routes.rb
 ADD compose.png $APP_PATH/public/compose.png
+
+EXPOSE 8080
