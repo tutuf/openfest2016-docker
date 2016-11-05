@@ -9,3 +9,5 @@ RUN mkdir $APP_PATH
 WORKDIR $APP_PATH
 RUN apt-get update &&\
     apt-get install -y gcc-4.9 build-essential nodejs vim imagemagick libmagic-dev libmagickwand-dev
+ADD Gemfile $APP_PATH/Gemfile
+ADD Gemfile.lock $APP_PATH/Gemfile.lock
