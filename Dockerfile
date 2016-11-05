@@ -12,3 +12,5 @@ RUN apt-get update &&\
 ADD Gemfile $APP_PATH/Gemfile
 ADD Gemfile.lock $APP_PATH/Gemfile.lock
 RUN bundle install
+
+RUN rails new . --force
