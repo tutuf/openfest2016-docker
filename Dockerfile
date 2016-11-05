@@ -6,3 +6,4 @@ ENV RUBY_USER="ruby" \
     RAILS_ENV="development"
 
 RUN mkdir $APP_PATH
+WORKDIR $APP_PATH
