@@ -18,3 +18,4 @@ RUN echo "Rails.application.routes.draw { root('welcome#index') }" > ${APP_PATH}
 ADD compose.png $APP_PATH/public/compose.png
 
 EXPOSE 8080
+CMD rails s -p 8080 -b 0.0.0.0
